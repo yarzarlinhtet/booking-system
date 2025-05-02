@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: booking-system
+
+  security:
+    user:
+      name: api
+      password: $2a$10$XVhrvBO5suar.K0/q7sgPuqPj4sDaZxOi1lVevkl2zP7YyKSWJulq # password
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/booking_system?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: postgres
+    password: P@ssw0rd
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+    show-sql: true
+
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+    properties:
+        org:
+          quartz:
+            jobStore:
+              driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+              dataSource: quartzDataSource
+
+  app:
+    jwt:
+      password: d2Fzd29uZGVyZmlsbG5vaXNlc3BsaXRjcm93ZHNob3R1bmRlcmFycm93dGhyb3VnaG7=
+      expiration-time: 8.64e+7
