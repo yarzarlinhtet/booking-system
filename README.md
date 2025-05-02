@@ -26,6 +26,7 @@ This project is a **Booking System** built using **Java**, **Spring Boot**, and 
 - **JPA**: For database interaction.
 - **SLF4J**: Logging framework.
 - **PostgreSQL**: Database for storing user and booking information.
+- **Quartz**: For scheduling tasks.
 - **Flyway**: For database migrations.
 - **Spring Security**: For securing the application and managing user authentication.
 - **Swagger**: For API documentation and testing.
