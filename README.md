@@ -45,7 +45,7 @@ The project includes SQL script files for setting up the database initial data. 
 ### How to Run the Scripts
 
 1. **Locate the Scripts**:
-   - Data initialization script: `src/main/resources/db/dymmy_*.sql`
+   - Data initialization script: `src/main/resources/data/dymmy_*.sql`
    
 
 ### Notes
