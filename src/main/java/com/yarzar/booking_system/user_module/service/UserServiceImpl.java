@@ -142,5 +142,7 @@ public class UserServiceImpl implements IUserService {
 
         booking.setStatus(BookingStatus.checked_in);
         this.classBookingRepository.save(booking);
+
+        return true;
     }
 }

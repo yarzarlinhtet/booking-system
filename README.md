@@ -48,8 +48,8 @@ The project includes SQL script files for setting up the database initial data. 
    
 
 ### Notes
-- The `schema.sql` file contains the database structure (tables, relationships, etc.).
-- The `data.sql` file contains initial data to populate the database.
+- The `V1__init.sql` file contains the database structure (tables, relationships, etc.).
+- The `dummy_*.sql` file contains initial data to populate the database.
 
 ## How to Run
 

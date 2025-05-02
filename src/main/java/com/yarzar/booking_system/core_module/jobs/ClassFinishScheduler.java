@@ -55,7 +55,7 @@ public class ClassFinishScheduler {
         LOG.info("Scheduling ClassFinishJob for classId: {}", classes.getId());
         try {
             JobDataMap dataMap = new JobDataMap();
-            dataMap.put("classId", classes.getId());
+            dataMap.put("classId", classes.getId().toString());
 
             JobDetail job = JobBuilder.newJob(ClassFinishJob.class)
                     .withIdentity("class-finish-job-" + classes.getId())
